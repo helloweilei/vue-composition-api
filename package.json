@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/helloweilei/vue-composition-api#readme",
   "workspaces": [
-    "packages/basics"
+    "packages/basics",
+    "packages/three-demo"
   ]
 }
