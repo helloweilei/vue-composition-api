@@ -1,9 +1,11 @@
 <template>
-  <FirstDemo />
+  <!-- <FirstDemo /> -->
+  <AllPixels />
   <!-- <SimpleLine /> -->
 </template>
 
 <script setup>
 import FirstDemo from './views/FirstDemo.vue'
 import SimpleLine from './views/SimpleLine.vue';
+import AllPixels from './views/AllPixels.vue';
 </script>
