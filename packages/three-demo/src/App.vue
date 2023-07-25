@@ -1,6 +1,6 @@
 <template>
-  <!-- <FirstDemo /> -->
-  <SimpleLine />
+  <FirstDemo />
+  <!-- <SimpleLine /> -->
 </template>
 
 <script setup>
