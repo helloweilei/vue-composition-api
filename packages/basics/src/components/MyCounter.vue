@@ -5,16 +5,23 @@
     <span>{{ counter }}</span>
     <button @click="decrease">-</button>
   </div>
-  <input type="text" v-model="counterData.title" />
+  <input type="text" v-model="counterData.title" v-autoFocus />
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue';
+import { reactive, ref } from 'vue'
+import vAutoFocus from '@/directives/vAutoFocus'
 
 const counter = ref(0);
 const counterData = reactive({
   title: 'My Counter'
 });
+
+// const vAutoFocus = {
+//   mounted(el: HTMLElement) {
+//     el.focus()
+//   }
+// }
 
 const increase = () => counter.value++;
 const decrease = () => counter.value--;
