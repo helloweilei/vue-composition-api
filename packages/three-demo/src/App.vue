@@ -3,6 +3,7 @@
     <RouterLink class="link" to="/scene">Scene</RouterLink>
     <!-- <a @click="gotoMaterial">Material</a> -->
     <RouterLink class="link" to="/materials">Materials</RouterLink>
+    <RouterLink class="link" to="/texture">Texture</RouterLink>
   </nav>
   <router-view></router-view>
 </template>
