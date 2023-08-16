@@ -5,6 +5,7 @@
     <RouterLink class="link" to="/materials">Materials</RouterLink>
     <RouterLink class="link" to="/texture">Texture</RouterLink>
     <RouterLink class="link" to="/light">Light</RouterLink>
+    <RouterLink class="link" to="/camera">Camera</RouterLink>
   </nav>
   <router-view></router-view>
 </template>
