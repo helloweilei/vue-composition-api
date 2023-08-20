@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <Teleport to="body">
+  <Teleport v-if="modelValue" to="body">
     <div class="modal-container">
       <h3 class="modal-title">
         <slot name="title"></slot>
@@ -9,12 +9,23 @@
         <slot></slot>
       </div>
       <div class="modal-actions">
-        <button @click="$emit('closeModal')">Close</button>
+        <button @click="emit('update:modelValue', false)">{{ closeText }}</button>
       </div>
     </div>
   </Teleport>
 </template>
 <script setup lang="ts">
+defineProps({
+  closeText: {
+    type: String,
+    default: 'Close Modal Now'
+  },
+  modelValue: {
+    type: Boolean,
+    default: false
+  },
+})
+const emit = defineEmits(['update:modelValue'])
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 <template>
   <h2>Modals View</h2>
   <button @click="showModal = true">Show Modal</button>
-  <Modal v-if="showModal" @closeModal="showModal = false">
+  <Modal v-model="showModal">
     <template #title>Test Modal</template>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates minus totam sequi placeat molestiae.
       Omnis quas facere, voluptatibus doloribus cum cumque? Nobis, earum reprehenderit rerum tempora vero corrupti nam.
