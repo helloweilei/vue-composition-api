@@ -4,7 +4,7 @@
   <span>age: {{ person.age }}</span>
 </template>
 <script setup lang="ts">
-import { ref, watch, toRefs } from 'vue';
+import { watch } from 'vue';
 
 const props = defineProps<{
   person: { name: string, age: number }
